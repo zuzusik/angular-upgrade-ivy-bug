@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import angular from 'angular';
 
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
-})
-export class AppComponent {
-  title = 'test-ng-cli';
-}
+angular
+  .module('myApp')
+  .component('appRoot', {
+    template: `
+      App Root <br><br>
+      <downgraded-component></downgraded-component>
+    `
+  });
