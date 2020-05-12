@@ -12,15 +12,16 @@ setAngularJSGlobal(angular);
   declarations: [
     DowngradedComponent
   ],
-  entryComponents: [
-    DowngradedComponent
-  ],
   imports: [
     BrowserModule,
     UpgradeModule
   ]
 })
 export class AppModule {
+  static entryComponents = [
+    DowngradedComponent
+  ];
+
   constructor(private upgrade: UpgradeModule) { }
 
   ngDoBootstrap() {
