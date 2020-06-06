@@ -5,12 +5,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import {setAngularJSGlobal, UpgradeModule} from '@angular/upgrade/static';
 import angular from 'angular';
 import {DowngradedComponent} from './downgraded.component';
+import {UpgradedComponent} from './upgraded.component';
 
 setAngularJSGlobal(angular);
 
 @NgModule({
   declarations: [
-    DowngradedComponent
+    DowngradedComponent,
+    UpgradedComponent
   ],
   imports: [
     BrowserModule,

@@ -6,5 +6,6 @@ angular
     template: `
       App Root <br><br>
       <downgraded-component></downgraded-component>
+      <upgraded-component></upgraded-component>
     `
   });
